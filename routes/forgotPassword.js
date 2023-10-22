@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
     user.randomStringExpires = randomStringExpires;
     await user.save();
 
-    const resetLink = `${process.env.BASE_URL}/resetPassword/${randomString}`;
+    const resetLink = `${process.env.BASE_URL}/verifyRandomString/${randomString}`;
 
     // HTML content with a clickable button
     const htmlContent = `
