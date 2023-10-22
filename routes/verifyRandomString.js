@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/:randomString", async (req, res) => {
   try {
     const user = await getUserByRS(req);
-
+    console.log(user);
     if (!user) {
       return res.status(400).json({ message: "Invalid Link or Link Expired" });
     }
