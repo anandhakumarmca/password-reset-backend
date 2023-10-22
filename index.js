@@ -23,6 +23,7 @@ dataBaseConnection();
 
 //Routes
 app.use("/api/user/resetPassword", resetPassword);
+app.use("/api/user/verifyRandomString", verifyRandomString);
 app.use("/api/user/forgotPassword", forgotPassword);
 app.use("/api/user/login", userLogin);
 app.use("/api/user/signup", userSignup);
