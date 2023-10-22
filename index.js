@@ -6,6 +6,7 @@ import { userSignup } from "./routes/userSignup.js";
 import { userLogin } from "./routes/userLogin.js";
 import { forgotPassword } from "./routes/forgotPassword.js";
 import { resetPassword } from "./routes/resetPassword.js";
+import { verifyRandomString } from "./routes/verifyRandomString.js";
 
 //Configuring the environmental variable
 dotenv.config();
